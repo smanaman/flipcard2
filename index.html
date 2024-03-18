@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head id="head">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+        <link rel="shortcut icon" href="data:image/jpeg;base64,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" type="image/x-icon">
+</head>
+
+<body>
+    <nav class="nav">
+        <div class="main">
+            <div class="img">
+                <img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/fkheaderlogo_exploreplus-44005d.svg"
+                    alt="" height="100px" width="100%">
+            </div>
+            <div class="sarch">
+           
+                <input type="text" placeholder="Search for Products, Brands and More">
+
+            </div>
+           <a href="login.html"> <div class="logo">
+                <span class="material-symbols-outlined">
+                    login
+                </span>
+                <h4>login</h4>
+            </div></a>
+
+            <div class="logo">
+                <span class="material-symbols-outlined">
+                    shopping_cart
+                </span
+                </span>
+                <h4>shopping card</h4>
+            </div>
+
+            <div class="logo">
+                <span class="material-symbols-outlined">
+                    storefront
+                </span>
+
+              <a href="warp.html">  <h4>product page</h4></a>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- raw2 -->
+
+    <div class="main2">
+
+        <div class="sdiv"> <img  src="https://rukminim2.flixcart.com/flap/80/80/image/29327f40e9c4d26b.png?q=100" alt=""
+                height="100%">
+            <b>Grocery</b>
+        </div>
+
+        <div class="sdiv"><img src="https://rukminim2.flixcart.com/flap/80/80/image/22fddf3c7da4c4f4.png?q=100" alt=""
+                height="100%">
+            <b>Mobile</b>
+        </div>
+
+        <div class="sdiv"><img src="https://rukminim2.flixcart.com/fk-p-flap/72/72/image/0d75b34f7d8fbcb3.png?q=100"
+                alt="" height="100%">
+            <b>Fashion</b>
+        </div>
+
+        <div class="sdiv"><img src="https://rukminim2.flixcart.com/flap/72/72/image/69c6589653afdb9a.png?q=100" alt=""
+                height="100%">
+            <b>Electronic</b>
+        </div>
+
+        <div class="sdiv"><img src="https://rukminim2.flixcart.com/flap/72/72/image/ab7e2b022a4587dd.jpg?q=100" alt=""
+                height="100%">
+            <b>Home</b>
+        </div>
+
+        <div class="sdiv"><img src="https://rukminim2.flixcart.com/fk-p-flap/80/80/image/0139228b2f7eb413.jpg?q=100"
+                alt="" height="100%">
+            <b>Applines</b>
+        </div>
+
+        <div class="sdiv"><img src="https://rukminim2.flixcart.com/flap/80/80/image/71050627a56b4693.png?q=100" alt=""
+                height="100%">
+            <b>Travel</b>
+        </div>
+
+        <div class="sdiv"><img src="https://rukminim2.flixcart.com/flap/72/72/image/dff3f7adcf3a90c6.png?q=100" alt=""
+                height="100%">
+            <b>Toys</b>
+        </div>
+
+
+    </div>
+
+    <img src="./1.png" alt="" width="100%">
+    <br><br>
+    <img src="./2.png" alt="" width="100%">
+
+    <!-- icon -->
+
+    <div>
+        <div class="book"><a #head href=""> <span
+                    style="font-size: 50px;                                                                                                                                                                                                                                                                                                                                                                                                        "
+                    class="material-symbols-outlined">
+                    stat_3
+                </span></a></div>
+        <div>
+
+            <br><br> <BR></BR><BR></BR><BR></BR>
+         <div class="mmain">   <div class="mobile">
+                <center>
+                    <div class="picar">
+                        <img src="https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/x/0/4/-original-imagxaqu3samghjd.jpeg?q=70"
+                            alt="" width="53%">
+                    </div>
+                </center>
+                <center>
+                    <div class="text">
+                        <b>REDMI 12 5G </b><br>
+                        <b>₹12,999</b>
+                    </div>
+                </center>
+            </div>
+
+            <div class="mobile">
+                <center>
+                    <div class="picar">
+                        <img src="https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/l/x/c/-original-imagx6rdpmhuq5ba.jpeg?q=70"
+                            alt="" width="85%">
+                    </div>
+                </center>
+                <center>
+                    <div class="text">
+                        <b>REDMI 12 5G </b><br>
+                        <b>₹12,999</b>
+                    </div>
+                </center>
+            </div>
+
+            <div class="mobile">
+                <center>
+                    <div class="picar">
+                        <img src="https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/m/o/b/-original-imaghx9qkugtbfrn.jpeg?q=70"
+                            alt="" width="85%">
+                    </div>
+                </center>
+                <center>
+                    <div class="text">
+                        <b>REDMI 12 5G </b><br>
+                        <b>₹12,999</b>
+                    </div>
+                </center>
+            </div>
+
+
+            <div class="mobile">
+                <center>
+                    <div class="picar">
+                        <img src="https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/y/q/t/galaxy-s23-fe-sm-s711bzabins-samsung-original-imagw6yhxqqkcqzh.jpeg?q=70"
+                            alt="" width="85%">
+                    </div>
+                </center>
+                <center>
+                    <div class="text">
+                        <b>REDMI 12 5G </b><br>
+                        <b>₹12,999</b>
+                    </div>
+                </center>
+            </div>
+
+
+            <div class="mobile">
+                <center>
+                    <div class="picar">
+                        <img src="https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/d/v/p/-original-imagxsc4nthcs2zk.jpeg?q=70"
+                            alt="" width="95%">
+                    </div>
+                </center>
+                <center>
+                    <div class="text">
+                        <b>REDMI 12 5G </b><br>
+                        <b>₹12,999</b>
+                    </div>
+                </center>
+            </div>
+
+
+            <div class="mobile">
+                <center>
+                    <div class="picar">
+                        <img src="https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/s/p/e/-original-imagtkzunhcht8vz.jpeg?q=70"
+                            alt="" width="85%">
+                    </div>
+                </center>
+                <center>
+                    <div class="text">
+                        <b>REDMI 12 5G </b><br>
+                        <b>₹12,999</b>
+                    </div>
+                <center>
+            </div> 
+
+
+            <div class="mobile">
+                <center>
+                    <div class="picar">
+                        <img src="https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/d/3/g/-original-imagy2v5ggthbvfe.jpeg?q=75"
+                            alt="" width="75%">
+                    </div>
+                </center>
+                <center>
+                    <div class="text">
+                        <b>REDMI 12 5G </b><br>
+                        <b>₹12,999</b>
+                    </div>
+                </center>
+            </div>
+        </div>
+            <br><br><br><br><br>
+            <div class="aqva">
+                <div class="mm">
+                    <img src="https://rukminim2.flixcart.com/fk-p-flap/520/280/image/8f93c8d6e486e2a3.jpg?q=20" alt=""
+                        width="480px" height="300px">
+                </div>
+                <div class="mm">
+                    <img src="https://rukminim2.flixcart.com/fk-p-flap/520/280/image/b5cf664dece6236c.jpg?q=20" alt=""
+                        width="480px" height="300px">
+                </div>
+                <div class="mm">
+                    <img src="https://rukminim2.flixcart.com/fk-p-flap/520/280/image/5a396d1080e7beb6.jpg?q=20" alt=""
+                        width="480px" height="300px">
+                </div>
+                <div class="mm">
+                    <img src="https://rukminim2.flixcart.com/fk-p-flap/520/280/image/f499fc8607c6fef2.jpg?q=20" alt=""
+                        width="480px" height="300px">
+                </div>
+                <div class="mm">
+                    <img src="https://rukminim2.flixcart.com/fk-p-flap/520/280/image/cb76b063540f90fc.jpg?q=20" alt=""
+                        width="480px" height="300px">
+                </div>
+                <div class="mm">
+                    <img src="https://rukminim2.flixcart.com/fk-p-flap/520/280/image/ec6cf773ae886bd7.jpg?q=20" alt=""
+                        width="480px" height="300px">
+                </div>
+            </div>
+            <br><br><br><br><br>
+            <div class="main4">
+                <div class="fr">
+                    <div class="r1">
+                        <div class="fimg">
+                            <img src="https://www.leafstudios.in/cdn/shop/products/Main_e5e71878-90d3-4817-9dd3-1d81e343afea_grande.jpg?v=1671601920"
+                                alt="" width="100%">
+                        </div>
+                        <div class="simg">
+                            <img src="https://m.media-amazon.com/images/I/61PCZ2MuDBL._AC_UF1000,1000_QL80_.jpg" alt=""
+                                width="100%" height="100%">
+                        </div>
+                    </div>
+
+
+                    <div class="r2">
+                        <div class="timg"> <img
+                                src="https://i.pinimg.com/236x/7c/d9/6a/7cd96a96ae9dceccf83bffbe15f3e7f2.jpg" alt=""
+                                width="100%" height="100%"></div>
+                        <div class="foimg"> <img
+                                src="https://img3.junaroad.com/uiproducts/19720587/pri_175_p-1681889786.jpg" alt=""
+                                width="100%" height="100%"></div>
+                    </div>
+
+                </div>
+                <div class="st"><img
+                        src="https://mir-s3-cdn-cf.behance.net/projects/404/82c1c5180560211.Y3JvcCwxMDc3LDg0Miw1NDksOA.png"
+                        alt="" height="100%" width="100%"></div>
+            </div>
+
+
+
+            <br><br><br><br><br>
+            <div class="aqva">
+                <div class="mm">
+                    <img src="https://rukminim2.flixcart.com/fk-p-flap/520/280/image/a2eea9122e7f6156.jpg?q=20" alt=""
+                        width="480px" height="300px">
+                </div>
+                <div class="mm">
+                    <img src="https://rukminim2.flixcart.com/fk-p-flap/520/280/image/8294a573a7c58c88.jpg?q=20" alt=""
+                        width="480px" height="300px">
+                </div>
+                <div class="mm">
+                    <img src="https://rukminim2.flixcart.com/fk-p-flap/520/280/image/bdfc3ca72ec76c07.jpg?q=20" alt=""
+                        width="480px" height="300px">
+                </div>
+                <div class="mm">
+                    <img src="https://rukminim2.flixcart.com/fk-p-flap/520/280/image/7fa4e6cb5f895b93.jpeg?q=20" alt=""
+                        width="480px" height="300px">
+                </div>
+                <div class="mm">
+                    <img src="https://rukminim2.flixcart.com/fk-p-flap/520/280/image/f8e8dadcd62818a3.jpeg?q=20" alt=""
+                        width="480px" height="300px">
+                </div>
+                <div class="mm">
+                    <img src="https://rukminim2.flixcart.com/fk-p-flap/520/280/image/c12fadf31cbf9dbe.jpg?q=20" alt=""
+                        width="480px" height="300px">
+                </div>
+            </div>
+
+
+            <footer class="footer">
+                <div class="fdiv">
+
+
+
+                    <div class="use">
+                        <h4 class="h4">ABOUT</h4>
+                        <p>Contact Us</p>
+                        <p>About US</p>
+                        <p>Careers</p>
+                        <p>Flipcart Stories</p>
+                        <p>Press</p>
+                        <p>Corporate information</p>
+                    </div>
+
+                    <div class="use">
+                        <h4 class="h4">GROUP COMPANIES</h4>
+                        <p>Myntra </p>
+                        <p>Flipkart Wholesale</p>
+                        <p>Cleartrip</p>
+                        <p>Shopsy</p>
+
+                    </div>
+
+                    <div class="use">
+                        <h4 class="h4">HELP</h4>
+                        <p>Playment</p>
+                        <p>Shiping</p>
+                        <p>Cancellation & returan</p>
+                        <p>FAQ</p>
+                        <p>Report Infringment</p>
+
+                    </div>
+                    <div class="use">
+                        <h4 class="h4">CONSUMER POLICY</h4>
+                        <p>Cancellation</p>
+                        <p>Terms and Use</p>
+                        <p>Security</p>
+                        <p>Sitemap</p>
+                        <p>EPR Compliance</p>
+                    </div>
+
+                    <div class="use">
+                        <h4 class="h4">Mail Use</h4>
+                        <p>FIPL</p>
+                        <p>TECH VILLAGE</p>
+                        <p>BANGLURU,560103</p>
+                        <p>KARNATAKA,INDIA</p>
+
+                    </div>
+
+                </div>
+            </footer>
+
+</body>
+
+</html>
+
+  
